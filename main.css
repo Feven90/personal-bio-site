@@ -1,0 +1,30 @@
+body {
+    background-color: lightgray;
+   }
+   .container {
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   #navLinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+   }
+   .navigation li {
+      margin: 10px;
+      list-style: none;
+      text-decoration: none;
+   }
+   a {
+    text-decoration: none;
+   }
+   .navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    background-color: white;
+   }
+  
