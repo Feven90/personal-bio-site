@@ -27,4 +27,15 @@ body {
     justify-content: space-between;
     background-color: white;
    }
+#img1{
+    max-height: 300px;
+    width: 30%;
+    }
+    .fullPage {
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    
+    }
+   
   
