@@ -1,23 +1,30 @@
 body {
     background-color: lightgray;
    }
-   .container {
+#firstPage {
+    background-image: url("../images/bio_img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.container {
      display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
    }
-   #navLinks {
+#navLinks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
    }
-   .navigation li {
+.navigation li {
       margin: 10px;
       list-style: none;
       text-decoration: none;
    }
-   a {
+a {
     text-decoration: none;
    }
    .navigation {
@@ -27,17 +34,10 @@ body {
     justify-content: space-between;
     background-color: white;
    }
-#img1{
-    max-height: 300px;
-    width: 30%;
-    }
     .fullPage {
-    width: 30%;
     padding: 10px;
     text-align: justify;
     }
-#image {
-    height: 100px;;
-}
+
    
   
