@@ -30,6 +30,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
+    cursor: pointer;
    }
 .navigation li {
       margin: 10px;

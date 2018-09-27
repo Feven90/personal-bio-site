@@ -59,4 +59,45 @@ const createProjectCards = () => {
      writeToDom(newString, 'projectsPage');
 };
      
+const bioLink = document.getElementById("navToBio");
+const bioPage = document.getElementById("bioPage");
+// const projectsPage = document.getElementById("projectsPage");
+    bioLink.addEventListener = ('click',(e) => {
+        e.preventDefault();
+    if (bioPage.style.display === 'none')
+    bioPage.style.display = 'block';
+    technologyPage.style.display = 'none';
+    projectsPage.style.display = 'none';
+    });
+   
+
+const technologyLink = document.getElementById("navToTechnologies");
+const technologyPage = document.getElementById("technologiesPage");
+
+technologyLink.addEventListener = ('click',(e) => {
+    // e.preventDefault();
+    if(technologyPage.style.display === 'none')
+    technologyPage.style.display = 'block';
+    bioPage.style.display = 'none';
+    projectsPage.style.display = 'none';
+})
+
+const projectsPage = document.getElementById("projectsPage");
+const projectsLink = document.getElementById("navToProjects");
+// projectsLink.addEventListener = ('click', (e) => {
+//     e.preventDefault();
+//     if(projectsPage.style.display === 'block'){
+//         projectsPage.style.display = 'none';
+//     }
+//     else {
+//         projectsPage.style.display = 'block';
+//     }
+// })
+
+// const bioLInk = () => {
+//     // const navToBioLink = document.getElementById('bio');
+//     const link = `<li><a id="navToBio" href="index.html#bioPage">Bio</a></li>`;
+//     writeToDom(link,'navLinks');
+// }
 createProjectCards();
+// bioLInk();
