@@ -2,9 +2,9 @@ import 'jquery';
 import 'bootstrap';
 
 import './index.scss';
-import initializeProjectView from './javascripts/components/projects';
+import initializeView from './javascripts/components/projects';
 
 const initializeApp = () => {
-  initializeProjectView();
+  initializeView.initializeProjectView();
 };
 initializeApp();

@@ -2,7 +2,7 @@
   "name": "personal-bio-site",
   "version": "1.0.0",
   "description": "This is an individual project which we will be working on for the next 6 months.  \r It is a personal site where I write some information about my selves and also list the technologies I have used so far.",
-  "main": "projects.js",
+  "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack",
     "lint": "eslint ./src --ext .js --fix",

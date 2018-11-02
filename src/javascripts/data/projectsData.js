@@ -1,9 +1,9 @@
 import $ from 'jquery';
 
 const loadProjects = () => new Promise((resolve, reject) => {
-  $.get('db/projects.json')
+  $.get('http://localhost:3005/projects')
     .done((data) => {
-      resolve(data.projects);
+      resolve(data);
     })
     .fail((error) => {
       reject(error);
