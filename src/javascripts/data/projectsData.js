@@ -1,12 +1,12 @@
-import $ from 'jquery';
+import axios from 'axios';
 
 const loadProjects = () => new Promise((resolve, reject) => {
-  $.get('http://localhost:3005/projects')
-    .done((data) => {
+  axios.get('http://localhost:3005/projects')
+    .then((data) => {
       resolve(data);
     })
-    .fail((error) => {
+    .catch((error) => {
       reject(error);
     });
 });
-export default { loadProjects };
+export default loadProjects;

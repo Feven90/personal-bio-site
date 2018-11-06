@@ -1,6 +1,10 @@
 import $ from 'jquery';
-import projectsFile from '../data/projectsData';
 import 'bootstrap';
+
+import projectsFile from '../data/projectsData';
+import siteImg from '../../../image/bioImg.jpg';
+
+$('#img1').attr('src', siteImg);
 
 
 const createProjectCards = (projects) => {
@@ -24,9 +28,9 @@ const createProjectCards = (projects) => {
 };
 
 const initializeProjectView = () => {
-  projectsFile.loadProjects().then((projects) => {
-    createProjectCards(projects);
-    console.log(projects);
+  projectsFile().then((data) => {
+    console.log(data);
+    createProjectCards(data.data);
   })
     .catch((error) => {
       console.error(error);
