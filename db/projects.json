@@ -5,7 +5,7 @@
         "screenshot": "https://i.ytimg.com/vi/nnTyf__NK6s/maxresdefault.jpg", 
         "description": "This is the best project", 
         "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-        "available": "true",
+        "available": true,
         "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
         "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     },
@@ -14,7 +14,7 @@
         "screenshot": "https://i.ytimg.com/vi/nnTyf__NK6s/maxresdefault.jpg", 
         "description": "This is the best project", 
         "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-        "available": "true",
+        "available": true,
         "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
         "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     },
@@ -23,7 +23,7 @@
         "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
         "description": "This is the best project", 
         "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-        "available": "false",
+        "available": false,
         "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
         "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     },

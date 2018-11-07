@@ -1,29 +1,36 @@
 import $ from 'jquery';
-import loadProjects from '../data/projectsData';
+import 'bootstrap';
+
+import projectsFile from '../data/projectsData';
+import siteImg from '../../../image/bioImg.jpg';
+
+$('#img1').attr('src', siteImg);
 
 
 const createProjectCards = (projects) => {
   let newString = '';
-  for (let i = 0; i < projects.length; i + 1) {
-    if (projects[i].available === true) {
-      newString += '<div class="projects">';
-      newString += `<h4>Title: ${projects[i].title} ${','}`;
-      newString += `Image: <img id = "image" src = ${projects[i].screenshot} ${','}>`;
-      newString += `Description: ${projects[i].description} ${','}`;
-      newString += `TechnologiesUsed: ${projects[i].technologiesUsed} ${','}`;
-      newString += `Available: ${projects[i].available} ${','}`;
-      newString += `<a href="${projects[i].url} ${','}">URL</a>`;
-      newString += `GithubUrl: ${projects[i].githubUrl}</h4>`;
-      newString += '</div>';
+  projects.forEach((project) => {
+    newString += `<div class="projects">
+      <h4>Title: ${project.title} ${','}
+      Image: <img id = "image" src = ${project.screenshot} ${','}>
+      Description: ${project.description} ${','}
+      TechnologiesUsed: ${project.technologiesUsed} ${','}
+      Available: ${project.available} ${','}
+      <a href="${project.url} ${','}">URL</a>
+      GithubUrl: ${project.githubUrl}</h4>
+      </div>`;
+    // }
+    if (project.available === true) {
+      $('#projectsPage').html(newString);
     }
-  }
-  $('#projectsPage').append(newString);
+  });
   //  writeToDom(newString, 'projectsPage');
 };
 
 const initializeProjectView = () => {
-  loadProjects().then((projects) => {
-    createProjectCards(projects);
+  projectsFile().then((data) => {
+    console.log(data);
+    createProjectCards(data.data);
   })
     .catch((error) => {
       console.error(error);
@@ -60,6 +67,5 @@ projectsLink.addEventListener('click', (e) => {
     bioPage.style.display = 'none';
   }
 });
-createProjectCards();
 
-export default initializeProjectView;
+export default { initializeProjectView };

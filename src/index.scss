@@ -1,30 +1,32 @@
 @import "~bootstrap/scss/bootstrap";
 body {
     background-color: lightgray;
-    margin: 0px;
-    top: 0;
+    display: flex;
+  flex-direction: column;
    }
-/* #firstPage {
-    background-image: url("../images/bio_img.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    width: auto;
-    height: auto;
-} */
 #img1 {
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; // add this for the 2 lines code above to work in IE8 
+    top: 0;
+    margin: 0px;
+    object-fit: cover;
+  object-position: 0 100%;
+
 }
 #image {
     width: 400px;
     height: 200px;
 }
 
-.container {
-     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.main {
+    // min-height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: stretch;
+    flex: 1 0 auto;
    }
 #navLinks {
     display: flex;
@@ -41,17 +43,27 @@ body {
 a {
     text-decoration: none;
    }
-   .navigation {
+.navigation {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-between;
     background-color: white;
+    position: sticky;
+    top: 0px;
    }
-    .fullPage {
-    padding: 10px;
-    text-align: justify;
-    }
-
+.page-footer {
+flex-shrink: 0;
+text-align: center;
+background-color: black;
+color: #fff;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+filter: alpha(opacity=50);  /* IE 5-7 */
+-moz-opacity: 0.5;          /* Netscape */
+-khtml-opacity: 0.5;        /* Safari 1.x */
+opacity: 0.5;               /* Good browsers */
+height: 40px;
+padding-top: 10px;
+}
    
   
