@@ -1,12 +1,36 @@
 import axios from 'axios';
+import apiKeys from '../../../db/apiKeys.json';
 
+const baseUrl = apiKeys.firebaseKeys.databaseURL;
 const loadProjects = () => new Promise((resolve, reject) => {
-  axios.get('http://localhost:3005/projects')
-    .then((data) => {
-      resolve(data);
+  axios
+    .get(`${baseUrl}/projects.json`)
+    .then((result) => {
+      const allTasksObject = result.data;
+      const allTasksArray = [];
+      if (allTasksObject != null) {
+        Object.keys(allTasksObject).forEach((taskId) => {
+          const newTask = allTasksObject[taskId];
+          console.log(newTask);
+          newTask.id = taskId;
+          allTasksArray.push(newTask);
+        });
+      }
+      console.log(allTasksArray);
+      resolve(allTasksArray);
     })
-    .catch((error) => {
-      reject(error);
+    .catch((err) => {
+      reject(err);
     });
 });
+
+// const loadProjects = () => new Promise((resolve, reject) => {
+//   axios.get('http://localhost:3005/projects')
+//     .then((data) => {
+//       resolve(data);
+//     })
+//     .catch((error) => {
+//       reject(error);
+//     });
+// });
 export default loadProjects;

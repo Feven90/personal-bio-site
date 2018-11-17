@@ -2,7 +2,9 @@ import $ from 'jquery';
 import 'bootstrap';
 
 import projectsFile from '../data/projectsData';
-import siteImg from '../../../image/bioImg.jpg';
+// import siteImg from '../../../image/bioImg.jpg';
+// import siteImg from '../../../image/butterfly.jpg';
+import siteImg from '../../../image/cherry.jpg';
 
 $('#img1').attr('src', siteImg);
 
@@ -30,7 +32,7 @@ const createProjectCards = (projects) => {
 const initializeProjectView = () => {
   projectsFile().then((data) => {
     console.log(data);
-    createProjectCards(data.data);
+    createProjectCards(data);
   })
     .catch((error) => {
       console.error(error);
@@ -68,4 +70,4 @@ projectsLink.addEventListener('click', (e) => {
   }
 });
 
-export default { initializeProjectView };
+export default initializeProjectView;
