@@ -1,6 +1,6 @@
 {
-    "projects": [
-    {
+    "projects": {
+    "project1": {
         "title": "Cool Project", 
         "screenshot": "https://i.ytimg.com/vi/nnTyf__NK6s/maxresdefault.jpg", 
         "description": "This is the best project", 
@@ -9,7 +9,7 @@
         "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
         "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     },
-    {
+    "projects2": {
         "title": "Cool Project", 
         "screenshot": "https://i.ytimg.com/vi/nnTyf__NK6s/maxresdefault.jpg", 
         "description": "This is the best project", 
@@ -18,7 +18,7 @@
         "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
         "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     },
-    {
+    "projects3": {
         "title": "Cool Project", 
         "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
         "description": "This is the best project", 
@@ -27,7 +27,7 @@
         "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
         "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     },
-    {
+    "projects4": {
         "title": "Cool Project", 
         "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
         "description": "This is the best project", 
@@ -36,5 +36,5 @@
         "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
         "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     }
-]
+    }
 }
