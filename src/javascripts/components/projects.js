@@ -4,7 +4,7 @@ import 'bootstrap';
 import projectsFile from '../data/projectsData';
 // import siteImg from '../../../image/bioImg.jpg';
 // import siteImg from '../../../image/butterfly.jpg';
-import siteImg from '../../../image/cherry.jpg';
+import siteImg from '../../../image/blooming.jpg';
 
 $('#img1').attr('src', siteImg);
 

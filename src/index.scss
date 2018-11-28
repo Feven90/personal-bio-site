@@ -1,21 +1,39 @@
 @import "~bootstrap/scss/bootstrap";
 body {
-    background-color: lightgray;
+    // background-color: lightgray;
     display: flex;
   flex-direction: column;
    }
 #img1 {
-    // background-repeat: no-repeat;
-    // background-position: center;
     max-width: 100%;
     height: auto;
     width: auto\9; // add this for the 2 lines code above to work in IE8 
     top: 0;
     margin: 0px;
     object-fit: cover;
-  object-position: 0 100%;
-
+    object-position: 0 100%;
 }
+#img1 {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    // filter: alpha(opacity=50);  /* IE 5-7 */
+    // -moz-opacity: 0.5;          /* Netscape */
+    // -khtml-opacity: 0.5;        /* Safari 1.x */
+    // opacity: 0.5;   
+}            /* Good browsers */
+    // height: 40px;
+    // padding-top: 10px;
+// width: 100vw;
+//   position: relative;
+//   height: auto;
+//   left: 50%;
+//   right: 50%;
+//   margin-left: -50vw;
+//   margin-right: -50vw;
+
 #image {
     width: 400px;
     height: 200px;
@@ -48,22 +66,36 @@ a {
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-between;
-    background-color: white;
     position: sticky;
     top: 0px;
+    background-color: black;
+    color: #fff;
    }
 .page-footer {
-flex-shrink: 0;
-text-align: center;
-background-color: black;
-color: #fff;
--ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
-filter: alpha(opacity=50);  /* IE 5-7 */
--moz-opacity: 0.5;          /* Netscape */
--khtml-opacity: 0.5;        /* Safari 1.x */
-opacity: 0.5;               /* Good browsers */
-height: 40px;
-padding-top: 10px;
+    flex-shrink: 0;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+    opacity: 0.5;               /* Good browsers */
+    height: 40px;
+    padding-top: 10px;
+}
+.image-text {
+    position: relative;
+    width: 100%;
+}
+.name {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 5em;
 }
    
   
