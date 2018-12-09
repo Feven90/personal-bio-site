@@ -4,46 +4,38 @@ body {
     display: flex;
   flex-direction: column;
    }
-#img1 {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; // add this for the 2 lines code above to work in IE8 
-    top: 0;
-    margin: 0px;
-    object-fit: cover;
-    object-position: 0 100%;
+.image-text {
+    // position: relative;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
-#img1 {
-    flex-shrink: 0;
-    text-align: center;
-    background-color: black;
-    color: #fff;
+#img1{
+    background-image: url("https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+// #img1 {
+//     flex-shrink: 0;
+//     text-align: center;
+//     background-color: black;
+//     color: #fff;
     // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
     // filter: alpha(opacity=50);  /* IE 5-7 */
     // -moz-opacity: 0.5;          /* Netscape */
     // -khtml-opacity: 0.5;        /* Safari 1.x */
     // opacity: 0.5;   
-}            /* Good browsers */
-    // height: 40px;
-    // padding-top: 10px;
-// width: 100vw;
-//   position: relative;
-//   height: auto;
-//   left: 50%;
-//   right: 50%;
-//   margin-left: -50vw;
-//   margin-right: -50vw;
-
+// } 
 #image {
     width: 400px;
     height: 200px;
 }
 
 .main {
-    // min-height: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: stretch;
     flex: 1 0 auto;
    }
 #navLinks {
@@ -71,6 +63,17 @@ a {
     background-color: black;
     color: #fff;
    }
+#bio {
+    background-color: #000;
+    margin-top: 0px;
+    h2 {
+        border-bottom: solid 1px#fff;
+        color: #fff;
+    }
+    p { 
+        color: #fff;
+    }
+}
 .page-footer {
     flex-shrink: 0;
     text-align: center;
@@ -84,18 +87,33 @@ a {
     height: 40px;
     padding-top: 10px;
 }
-.image-text {
-    position: relative;
-    width: 100%;
-}
 .name {
     position: absolute;
     top: 200px;
     left: 0;
     width: 100%;
+    height: 100%;
     color: black;
     text-align: center;
     font-size: 5em;
+    font-family: 'Courgette', cursive;
 }
-   
+.logo {
+    font-family: 'Courgette', cursive;
+}
+#navLinks > li > a {
+    color: #fff;
+    a {
+        text-decoration: none;
+    }
+}
+#technologiesPage {
+    margin-top: 50px;
+    // background-color: #000;
+}
+ul > li {
+    margin: 60px;
+    list-style-type: none;
+}
+
   

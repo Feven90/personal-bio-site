@@ -5,47 +5,73 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <!-- TODO: Insert a title for your page -->
  <title>Feven</title>
- <!-- <link rel="stylesheet" href="main.css"> -->
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 </head>
 
 <body>
  <!-- Navigation -->
  <nav class = "navigation">
    <!-- TODO: Insert some sort of H1-H6 with your name here -->
-   <h2>
-   Feven
-   </h2>
+   <h2 class="logo">Feven</h2>
    <ul id="navLinks">
-     <li><a id="navToBio" class="link">Bio</a></li>
-     <li><a id="navToTechnologies" class="link">Technologies</a></li>
-     <li><a id="navToProjects" class="link">Projects</a></li>
+     <li><a id="navToBio" href="#bio" class="link">Bio</a></li>
+     <li><a id="navToTechnologies" href="./index.html#technologiesPage" class="link">Technologies</a></li>
+     <li><a id="navToProjects" href="#projectsPage" class="link">Projects</a></li>
    </ul>
  </nav>
  <!-- End Navigation -->
 
  <!-- Primary View -->
  <div class = "main"> 
- <div class="fullPage" id="bioPage" style= "display:block">
-<div class="image-text"> 
-  <div id="img-div"><img id="img1" alt=""></div>   
-  <h1 class="name">Feven Mulugeta</h1>
-</div>
-   <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-   <p> <h2>Bio</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quia nulla similique dolores aut distinctio iure rem repudiandae laudantium aperiam! Similique eveniet illum distinctio ad unde saepe nisi sunt maiores. 
+    <div class="fullPage" id="bioPage">
+      <div class="image-text"> 
+          <img id="img1" alt="">
+          <!-- <div class="home-text"> -->
+            <h1 class="name">Feven Mulugeta</h1>
+            <!-- <h2>Full-Stack Web Developer</h2> -->
+          <!-- </div> -->
+          <!-- <div class="arrow">
+              <p>
+                Learn More
+              </p>
+              <span class="glyphicon glyphicon-menu-down bounce"></span>
+            </div> -->
+      </div>
+    </div>
+<!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
+   <div id="bio" class="d-flex flex-row">
+     <div><h2>Bio</h2>
+     <p m-2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quia nulla similique dolores aut distinctio iure rem repudiandae laudantium aperiam! Similique eveniet illum distinctio ad unde saepe nisi sunt maiores. 
        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit earum aperiam ex officia deserunt qui voluptates quaerat quam nesciunt cupiditate rerum ut expedita doloribus, tempore beatae. Ullam quos numquam et!
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae facere quaerat dolorem optio modi fugiat veritatis repudiandae neque nisi repellat laudantium rerum, minima repellendus eos, asperiores tempore laboriosam dolores harum?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam magnam porro consequatur omnis, repellendus quia fugit ducimus deserunt quos! Ducimus, suscipit quo! Commodi dolorem dicta ut asperiores. Ipsum, consectetur.
     </p>
- </div>
- <div class="fullPage" id="technologiesPage" style="display:none">
+  </div>
+    <div>
+      <img src="https://www.verywellmind.com/thmb/uKtEtZCgCL2vXZtTM654fiZDPM0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-567150195-58bc87ad3df78c353c360c56.jpg" alt="" width=600px>
+    </div>
+  </div>
+ <div class="fullPage" id="technologiesPage">
    <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-   <p> <h2>Technologies</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quia nulla similique dolores aut distinctio iure rem repudiandae laudantium aperiam! Similique eveniet illum distinctio ad unde saepe nisi sunt maiores. 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit earum aperiam ex officia deserunt qui voluptates quaerat quam nesciunt cupiditate rerum ut expedita doloribus, tempore beatae. Ullam quos numquam et!
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae facere quaerat dolorem optio modi fugiat veritatis repudiandae neque nisi repellat laudantium rerum, minima repellendus eos, asperiores tempore laboriosam dolores harum?
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam magnam porro consequatur omnis, repellendus quia fugit ducimus deserunt quos! Ducimus, suscipit quo! Commodi dolorem dicta ut asperiores. Ipsum, consectetur.
-     </p>
+   <h2 id="technology">Technologies</h2>
+    <ul class="d-flex flex-row">
+      <li><img src="http://flaticns.com/web-icons/github.png" width="100px" class="tech"></li>
+      <li><img src="https://cdn4.iconfinder.com/data/icons/programming-developer/512/programing-developer-programming-css-css3-logo-website-512.png" width="100px" class="tech"></li>
+      <li><img src="http://files.softicons.com/download/web-icons/html5-icons-by-w3c/png/512/HTML5_Black_Logo.png" width="100px" class="tech"></li>
+      <li><img src="https://cdn.iconscout.com/icon/free/png-256/sass-12-458185.png" width="100px" class="tech"></li>
+      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxjUg-bzYYLHlKEW73wQgxwOtoKsBHnk9BYBqjcu8f6pyQMUXUA" width="100px" class="tech"></li>
+      <li><img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png" width="100px" class="tech"></li>  
+    </ul>
+    <ul class="d-flex flex-row">
+        <li><img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" width="100px" class="tech"></li>
+        <li><img src="https://cdn4.iconfinder.com/data/icons/programming-developer/512/programing-developer-programming-css-css3-logo-website-512.png" width="100px" class="tech"></li>
+        <li><img src="http://files.softicons.com/download/web-icons/html5-icons-by-w3c/png/512/HTML5_Black_Logo.png" width="100px" class="tech"></li>
+        <li><img src="https://cdn.iconscout.com/icon/free/png-256/sass-12-458185.png" width="100px" class="tech"></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxjUg-bzYYLHlKEW73wQgxwOtoKsBHnk9BYBqjcu8f6pyQMUXUA" width="100px" class="tech"></li>
+        <li><img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png" width="100px" class="tech"></li>  
+      </ul>
  </div>
- <div class="fullPage" id="projectsPage" style="display:none"></div>
+ <div class="fullPage" id="projectsPage"></div>
  <!-- End Primary View -->
 </div>
 
