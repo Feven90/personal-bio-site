@@ -11,10 +11,11 @@ import projectsFile from '../data/projectsData';
 
 const createProjectCards = (projects) => {
   let newString = '';
+  newString = '<h1 class="project-text">Projects</h1>';
   projects.forEach((project) => {
     newString += `<div class="projects">
       <h4>Title: ${project.title} ${','}
-      Image: <img id = "image" src = ${project.screenshot} ${','}>
+     <img id = "image" src = ${project.screenshot} ${','}>
       Description: ${project.description} ${','}
       TechnologiesUsed: ${project.technologiesUsed} ${','}
       Available: ${project.available} ${','}
