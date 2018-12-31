@@ -13,14 +13,17 @@ const createProjectCards = (projects) => {
   let newString = '';
   newString = '<h1 class="project-text">Projects</h1>';
   projects.forEach((project) => {
-    newString += `<div class="projects">
-      <h4>Title: ${project.title} ${','}
-     <img id = "image" src = ${project.screenshot} ${','}>
-      Description: ${project.description} ${','}
-      TechnologiesUsed: ${project.technologiesUsed} ${','}
-      Available: ${project.available} ${','}
-      <a href="${project.url} ${','}">URL</a>
-      GithubUrl: ${project.githubUrl}</h4>
+    newString += `<div class="projects d-flex flex-row">
+      <div class="m-4">
+      <img id = "image" src = ${project.screenshot} ${','}>
+      </div>
+      <div class="m-4">
+      <div><h4>${project.title}</h4></div>
+      <div>${project.description}</div>
+      <div>TechnologiesUsed: ${project.technologiesUsed}</div>
+      <a href="${project.url}" target="_blank">URL</a>
+      <a href="${project.githubUrl}" target="_blank">Git Hub</a>
+      </div>
       </div>`;
     // }
     if (project.available === true) {
