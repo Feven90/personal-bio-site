@@ -2,11 +2,11 @@ import $ from 'jquery';
 import 'bootstrap';
 
 import projectsFile from '../data/projectsData';
-// import siteImg from '../../../image/bioImg.jpg';
+import profileImage from '../../../image/profile.jpg';
 // import siteImg from '../../../image/butterfly.jpg';
 // import siteImg from '../../../image/abstract.jpg';
 
-// $('#img1').attr('src', siteImg);
+$('#profile-picture').attr('src', profileImage);
 
 
 const createProjectCards = (projects) => {

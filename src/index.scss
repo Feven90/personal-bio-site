@@ -14,10 +14,15 @@ body {
 }
 #img1{
     background-image: url("https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    // background-image: url("/image/")
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
+}
+#profile-picture {
+    
+    background-image: url('/image/profile.jpg');
 }
 // #img1 {
 //     flex-shrink: 0;
@@ -71,10 +76,10 @@ a {
     margin-top: 0px;
     h2 {
         border-bottom: solid 1px#fff;
-        color: #fff;
+        color: #000;
     }
     p { 
-        color: black;
+        color: grayscale($color: #e9d9d9);
     }
 }
 .page-footer {
