@@ -59,9 +59,9 @@ body {
         top: 80px;
     }
 }
-#profile-picture {
-    background-image: url('/image/profile.jpg');
-}
+// #profile-picture {
+//     background-image: url('/image/profile.jpg');
+// }
 #image {
     width: 400px;
     height: 200px;
@@ -104,7 +104,7 @@ a {
     h2 {
         border-bottom: solid 1px#fff;
         color: grayscale($color: #f7eeee);
-        margin: 0 50px;
+        margin: 20 50px;
         padding-bottom: 10px;
     }
     p { 
@@ -164,7 +164,6 @@ a {
 #technologiesPage {
     margin-top: 50px;
     margin-bottom: 10px;
-    // background-image: url('/image/crystal.jpeg');
 }
 #technologiesPage ul {
     justify-content: center;
@@ -173,9 +172,6 @@ a {
     border-bottom: solid 2px rgb(207, 129, 101);
     margin: 0 50px;
     margin-bottom: 20px;
-}
-.technology-image {
-    background-image: url('/image/coffee.jpeg');
 }
 ul > li {
     margin: 40px;
@@ -188,14 +184,18 @@ ul > li {
     border-bottom: solid 2px rgb(207, 129, 101);
     margin: 0 50px;
 }
+#contact {
+    background-image: url("../image/crystal.jpeg");
+}
 .contact-text {
-    // text-align: center;
     border-bottom: solid 2px rgb(207, 129, 101);
     text-decoration-color: black;
     margin: 0 50px;
+    text-align: center;
 }
 #contact > ul {
     justify-content: space-around;
+    margin: 0px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -213,9 +213,9 @@ ul > li {
         display: none;
     }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
     ul > li {
-        margin: 1px;
+        margin: 8px;
         list-style-type: none;
        .tech {
          width: 50px;
