@@ -30,16 +30,14 @@ const createProjectCards = (projects) => {
       $('#projectsPage').html(newString);
     }
   });
-  //  writeToDom(newString, 'projectsPage');
 };
 
 const initializeProjectView = () => {
   projectsFile().then((data) => {
-    console.log(data);
     createProjectCards(data);
   })
     .catch((error) => {
-      console.error(error);
+      console.error(error, 'page can not load');
     });
 };
 
