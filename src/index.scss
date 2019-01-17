@@ -1,12 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 body {
-    // background-color: lightgray;
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
    }
 .image-text {
-    // position: relative;
-    // width: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -14,7 +11,6 @@ body {
 }
 #img1{
     background-image: url("https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    // background-image: url("/image/")
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -22,7 +18,7 @@ body {
 }
 .arrow {
     width: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
 }
 .arrow::after {
@@ -31,6 +27,7 @@ body {
     height: 40px;
     position: absolute;
     margin: auto;
+    margin-top: 100vh;
     // top:0;
     // right: 0;
     // bottom: 0;
@@ -59,9 +56,6 @@ body {
         top: 80px;
     }
 }
-// #profile-picture {
-//     background-image: url('/image/profile.jpg');
-// }
 #image {
     width: 400px;
     height: 200px;
@@ -96,9 +90,6 @@ a {
     color: #fff;
    }
 #bio {
-    // background-image: url("../image/leaves.jpeg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
     background-color: rgb(34, 19, 19);
     margin-top: 0px;
     h2 {
@@ -197,7 +188,6 @@ ul > li {
     justify-content: space-around;
     margin: 0px;
 }
-
 @media only screen and (max-width: 1100px) {
     #profile-picture {
         width: 400px;
@@ -209,11 +199,49 @@ ul > li {
         margin: 10px;
         list-style-type: none;
     }
+    @-webkit-keyframes arrow {
+        0%, 100% {
+            top: 280px;
+        }
+        50% {
+            top: 300px;
+        }
+    }
+    @-webkit-keyframes arrow {
+        0%, 100% {
+            top: 280px;
+        }
+        50% {
+            top: 300px;
+        }
+    }
+}
+@media only screen and (max-width: 980px) {
+    #profile-picture {
+        width: 300px;
+        margin-top: 30px;
+    }
+@-webkit-keyframes arrow {
+    0%, 100% {
+        top: 200px;
+    }
+    50% {
+        top: 230px;
+    }
+}
+@-webkit-keyframes arrow {
+    0%, 100% {
+        top: 200px;
+    }
+    50% {
+        top: 230px;
+    }
+}
+}
+@media only screen and (max-width: 700px) {
     #profile-picture {
         display: none;
     }
-}
-@media only screen and (max-width: 700px) {
     ul > li {
         margin: 8px;
         list-style-type: none;
@@ -221,8 +249,21 @@ ul > li {
          width: 50px;
        }
     }
-    .arrow {
-        margin-top: 100hv;
+    @-webkit-keyframes arrow {
+        0%, 100% {
+            top: 350px;
+        }
+        50% {
+            top: 380px;
+        }
+    }
+    @-webkit-keyframes arrow {
+        0%, 100% {
+            top: 350px;
+        }
+        50% {
+            top: 380px;
+        }
     }
     .name {
         font-size: 3em;
@@ -231,5 +272,24 @@ ul > li {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    @-webkit-keyframes arrow {
+        0%, 100% {
+            top: 400px;
+        }
+        50% {
+            top: 430px;
+        }
+    }
+    @-webkit-keyframes arrow {
+        0%, 100% {
+            top: 400px;
+        }
+        50% {
+            top: 430px;
+        }
     }
 }
