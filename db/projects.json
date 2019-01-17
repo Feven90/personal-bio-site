@@ -1,31 +1,31 @@
 {
     "projects": {
     "project1": {
-        "title": "Cool Project", 
-        "screenshot": "https://i.ytimg.com/vi/nnTyf__NK6s/maxresdefault.jpg", 
-        "description": "This is the best project", 
-        "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+        "title": "Todo-Tasks", 
+        "screenshot": "https://raw.githubusercontent.com/Feven90/firebase-todo/master/src/images/tasks.png", 
+        "description": "This is an app which can be used in a day to day life. We can login and add things we need to do, after completing them we can check the box and the task will be added to completed tasks section. This app is full CRUD, the tasks are read from firebase and we can delete, edit and add tasks.", 
+        "technologiesUsed": "jQuery, SASS, Axios, Webpack, Firebase",
         "available": true,
-        "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-        "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+        "url": "https://fir-todo-ae8c2.firebaseapp.com/", 
+        "githubUrl": "https://github.com/Feven90/firebase-todo"
     },
     "projects2": {
-        "title": "Cool Project", 
-        "screenshot": "https://i.ytimg.com/vi/nnTyf__NK6s/maxresdefault.jpg", 
-        "description": "This is the best project", 
-        "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+        "title": "Developer Plus Plus", 
+        "screenshot": "https://raw.githubusercontent.com/Feven90/developer-portal/master/images/dev-portal.png", 
+        "description": "This app is built with React, it mainly has three sections. The first section is 'Form' which has an input field for name and link, and also radio buttons to choose where we want to add the inputs. The second component is 'Portal' which shows all materials we have saved with tabs for each part. And the third part is 'github profile' which gets user's information from github and how many commits the user did in the last days.", 
+        "technologiesUsed": "React, SASS, Firebase, Axios",
         "available": true,
-        "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-        "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+        "url": "https://developer-portal-5eef4.firebaseapp.com/", 
+        "githubUrl": "https://github.com/Feven90/developer-portal"
     },
     "projects3": {
-        "title": "Cool Project", 
-        "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-        "description": "This is the best project", 
-        "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-        "available": false,
-        "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
-        "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+        "title": "Nutshell Chufas", 
+        "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-8/nutshell-chufas/master/screenshots/main-page.png", 
+        "description": "This is a group project, I was responsible for Articles. A user needs to sign in to use the app, the articles section is where a user can save articles and links to the the page they got the article from. A user will only see articles he/she saved on the page, there will also be add and edit button on each articles. Deleting/Editing the articles from the page will reflect on firebase. ", 
+        "technologiesUsed": "HTML, SASS, jQuery, Firebase, Axios",
+        "available": true,
+        "url": "https://nutshell-chufas.firebaseapp.com/",
+        "githubUrl": "https://github.com/nss-evening-cohort-8/nutshell-chufas"
     },
     "projects4": {
         "title": "Cool Project", 

@@ -1,6 +1,5 @@
 # Personal Bio Site
-This is my personal site which contains the projects I have been working on. This site gave me a chance to practice more on CSS and firebase. 
-
+This is my personal site which contains the projects I have been working on. 
 ## Screenshots
 
 1. First Page
