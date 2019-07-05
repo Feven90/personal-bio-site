@@ -3,10 +3,11 @@ import 'bootstrap';
 import './projects.scss';
 import projectsFile from '../data/projectsData';
 import profileImage from '../../../image/profile.jpg';
-// import siteImg from '../../../image/butterfly.jpg';
+import backgroundImage from '../../../image/final-image.jpeg';
 // import siteImg from '../../../image/abstract.jpg';
 
 $('#profile-picture').attr('src', profileImage);
+$('#img').attr('src', backgroundImage);
 
 
 const createProjectCards = (projects) => {
